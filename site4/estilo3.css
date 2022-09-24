@@ -1,0 +1,139 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+img{
+	max-width:100%;
+}
+:root{
+	--cor-fundo:#E8EAF1;
+	--cor-azul:#101E96;
+	--cor-ciano:#287FD0;
+	--cor-branco:#FFFFFF;
+	--cor-amarela:#ECD229;
+	--cor-preto:#000000;
+}
+
+
+#topo{
+	background-color:var(--cor-amarela);
+	height:120px;
+	padding:1rem;
+	border-bottom:2px solid var(--cor-ciano);
+	display:grid;
+	grid-template-columns:35% 40%;
+	grid-template-rows:100%;
+}
+#menu{
+	grid-column-start:2;
+	grid-column-end:3;
+}
+.logo-site{
+	background-image:url("../imagens/image3.png");
+	background-repeat:no-repeat;
+	width:232;
+	height:73px;
+	text-indent:-100000px;
+}
+#menu ul{
+	display:flex;
+	list-style:none;
+	justify-content:space-between;
+	align-items:center;
+	height:100%;
+	font-size:15px;
+	text-transform:uppercase;
+}
+#menu a{
+	color:var(--cor-preto);
+	text-decoration:none;
+	font-family:'Roboto', sans-serif;
+}
+#menu li{
+	height:25%;
+}
+#menu li:hover{
+	border-bottom: 5px solid var(--cor-ciano);
+}
+body{
+	font-family:arial;
+	background-color:var(--cor-amarela);
+}
+main{
+	display:grid;
+	grid-template-columns:50% 50%;
+	height:880px;
+	border-bottom:5px solid var(--cor-ciano);
+}
+.box{
+	grid-column:2/3;
+	position:absolute;
+	margin-top:5%;
+	margin-left:10%;
+	width:30%;
+	border-radius:15px;
+	padding-top:15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	background-color:var(--cor-ciano);
+	box-shadow:0px 4px 4px rgba(0,0,0,0.5);
+}
+fieldset{
+	border:3px solid var(--cor-amarela);
+}
+legend{
+	border:1px solid var(--cor-amarela);
+	padding:10px;
+	text-align:center;
+	background-color:var(--cor-amarela);
+	border-radius:8px;
+	color:var(--cor-ciano);
+}
+.inputBox{
+	position:relative;
+	margin-left:1px;
+}
+.inputuser{
+	background:none;
+	border:none;
+	border-bottom:1px solid var(--cor-branco);
+	outline:none;
+	color:white;
+	font-size:15px;
+	width:95%;
+	letter-spacing:2px;
+	margin-left:2.5%;
+}
+#sessao1 > img{
+	height:100%;
+	border-right:2px solid var(--cor-ciano);
+}
+#sessao2>h1{
+	margin-top:6rem;
+	font-size:50px;
+	text-align:center;
+	color:var(--cor-ciano);
+}
+#submite{
+	background-color:var(--cor-amarela);
+	width:80%;
+	margin-left:10%;
+	border:1px solid var(--cor-ciano);
+	height:30px;
+	border-radius:5px;
+	color:var(--cor-ciano);
+	box-shadow:0px 4px 4px rgba(0,0,0,0.5);
+}
+label{
+	color:yellow;
+	margin-left:2.7%;
+}
+.sexo{
+	color:yellow;
+	margin-left:2.7%;
+}
+.sexo > label{
+	margin-left:1px;
+}
